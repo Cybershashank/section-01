@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>assignment</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <style>
+        header {
+
+            height: 70vh;
+            background-size: cover;
+            color: black;
+            text-align: center;
+            font-family: Roboto;
+            padding-top: 150px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+        }
+
+        .feature-card {
+
+            text-align: center;
+            padding: 50px;
+            color: var(--theme-color);
+            transition-duration: 0.3s;
+        }
+
+        .feature-card:hover {
+            background-color: var(--theme-color);
+            color: white;
+        }
+
+        .section-features {
+            text-align: center;
+            padding: 50px 300px;
+            font-family: roboto;
+        }
+
+        .card-container {
+            display: flex;
+        }
+
+        .logo{
+            width: 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3 class="hero-title" style="text-align: center; font-size: 60px"> Get the most out of your mobile with the
+            right subsricption</h3>
+
+        <p>All devices come with free delivery or pickuo as standard. See information an avialable shopping options for
+            yours location.</p>
+        <section class="section-features">
+
+            <h2 class="section-title"></h2>
+            <div class="card-container">
+
+                <div class="feature-card">
+                    <img src="data:image/png;base64,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" class="logo">
+                    <h3>Jio Digital</h3>
+                    <h5>Upto to 100 mbps</h5>
+                    <h4>249Rs-/Month</h4>
+
+                    <button class="btn btn-dark w-100 mt-4">Add subscription</button>
+                </div>
+
+                <div class="feature-card">
+                    <img src="data:image/png;base64,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" class="logo">
+                    <h3>Airtel</h3>
+                    <h5>Upto to 100 mbps</h5>
+                    <h4>249Rs-/Month</h4>
+           
+                    <button class="btn btn-dark w-100 mt-4">Add subscription</button>
+                </div>
+
+                <div class="feature-card">
+                    <img src="https://findisha.com/wp-content/uploads/2020/09/vodafone-idea-new-logo-vi.png" class="logo">
+                    <h3>Vodafone Idea</h3>
+                    <h5>Upto to 100 mbps</h5>
+                    <h4>249Rs-/Month</h4>
+
+                    <button class="btn btn-dark w-100 mt-4">Add subscription</button>
+                </div>
+            </div>
+            <button class="btn btn-dark  mt-4">See all subscriptions</button>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
